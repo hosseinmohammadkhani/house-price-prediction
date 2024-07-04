@@ -42,7 +42,7 @@ def create_dataset(area):
     url = f"https://www.sheypoor.com/s/tehran/{english_area}/houses-apartments-for-sale"
     driver.get(url)
 
-    while len(collected_containers) <= 5 : 
+    while len(collected_containers) <= 2000 : 
         containers = driver.find_elements(By.XPATH, single_container)
         for i in containers:
             if i not in collected_containers:
